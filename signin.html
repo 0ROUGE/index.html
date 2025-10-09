@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        p{
+            text-transform: uppercase;
+            font-family: cursive;
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        fieldset{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-family: cursive;
+            font-size: 20px;
+            border: 20px solid white;
+            padding: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: lightgrey;
+            width: 500px;
+            display: inline-block;
+            height: 300px;
+            
+            
+        }
+        body{
+             display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        input[placeholder="username"], input[placeholder="email"], input[placeholder="password"], input[type="date"], select{
+            width: 200px;
+            height: 30px;
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+            font-family: cursive;
+            cursor: pointer;
+        }
+
+        input[type="submit"]{
+            cursor: pointer;
+        }  
+          a{
+            font-family: cursive;
+            font-weight: 500;
+            font-size: 20px;
+            border: 10px solid #a0a0af;
+            padding :5px;
+            cursor:pointer;
+            margin-bottom: 30px;
+            border-radius: 1000px;
+            text-decoration: none;
+            color: #000000;
+            background-color: #a0a0af;
+        }    
+    </style>
+</head>
+<body>
+   <p> WOOHOO! You are one step closer to joining us.😎</p>
+   <p>lemme stop yapping and get you signed up.👇🏾👇🏾</p>
+    <form action="mypage.html" >
+     <fieldset>
+          <label for="name">username</label>
+          <input type="text"  id="name" name="name" placeholder="username" required>    
+            <br><br>
+            <label for="email">email</label>
+            <input type="email" id="email" name="email" placeholder="email" required> 
+            <br>    
+            <br>
+            <label for="password">password</label>              
+            <input type="password" id="password" name="password" placeholder="password" required> 
+            <br>
+            <br>
+            <label for="date">D.O.B</label>
+            <input type="date" id="date" name="date" required>
+            <br>    
+            <br>
+            <label for="resp1">How did you hear about us:</label>
+            <select id="resp1" name="resp1">
+                <option value="friend">FRIEND</option>
+                <option value="social media">SOCIAL MEDIA</option>
+                <option value="advert">ADVERT</option>
+                <option value="other">OTHER</option>        
+            </select>
+            <input type="submit" value="submit">
+        </fieldset>
+    </form>
+    <p>See,all signed up🥲😹</p>
+    <a href="login.html" >👈🏾👈🏾LOGIN</a>
+<p>KIK(I)'S</p>
+</body>
+</html>
